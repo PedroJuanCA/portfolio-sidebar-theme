@@ -1,4 +1,3 @@
-// portfolio-sidebar-theme.js
 import { LitElement, html, css } from 'lit';
 
 class PortfolioSidebarTheme extends LitElement {
