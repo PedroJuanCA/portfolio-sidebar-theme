@@ -169,7 +169,12 @@ class PortfolioSidebarTheme extends LitElement {
           <p>MS Office | English & Spanish | Strategic Planning</p>
         </section>
 
-        <section id="screen-3">EXPERIENCE</section>
+        <section id="screen-3"> <h2>Experience</h2> <div class="about-text"> <p><strong>e-STEPS LLC (Intern):    
+        </strong> Developed backend dashboards using PHP and MySQL, integrated sales analytics with Chart.js, and implemented responsive widgets.</p> <p><strong>HOD Investment Company:
+        </strong> Tracked inventory and acquisition metrics using Excel-based automations.</p> 
+        <p><strong>Advanced Hospice:
+        </strong> Managed warehouse logistics and assisted in coordinating medical equipment distribution.
+        </p> </div> </section>
 
         <section id="screen-4">
           <h2>About Me</h2>
