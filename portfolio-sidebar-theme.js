@@ -15,6 +15,7 @@ class PortfolioSidebarTheme extends LitElement {
       display: flex;
       height: 100vh;
       overflow: hidden;
+      flex-direction: row;
     }
     nav {
       width: 200px;
@@ -101,6 +102,28 @@ class PortfolioSidebarTheme extends LitElement {
       line-height: 1.8;
       padding: 0 1rem;
     }
+
+    @media screen and (max-width: 768px) {
+      :host {
+        flex-direction: column;
+      }
+      nav {
+        flex-direction: row;
+        width: 100%;
+        padding: 1em;
+        gap: 1em;
+        overflow-x: auto;
+      }
+      nav button {
+        font-size: 0.8em;
+        padding: 0.6em;
+        white-space: nowrap;
+      }
+      section {
+        height: auto;
+        padding: 2em 1em;
+      }
+    }
   `;
 
   firstUpdated() {
@@ -169,12 +192,19 @@ class PortfolioSidebarTheme extends LitElement {
           <p>MS Office | English & Spanish | Strategic Planning</p>
         </section>
 
-        <section id="screen-3"> <h2>Experience</h2> <div class="about-text"> <p><strong>e-STEPS LLC (Intern):    
-        </strong> Developed backend dashboards using PHP and MySQL, integrated sales analytics with Chart.js, and implemented responsive widgets.</p> <p><strong>HOD Investment Company:
-        </strong> Tracked inventory and acquisition metrics using Excel-based automations.</p> 
-        <p><strong>Advanced Hospice:
-        </strong> Managed warehouse logistics and assisted in coordinating medical equipment distribution.
-        </p> </div> </section>
+        <section id="screen-3">
+          <h2>Experience</h2>
+          <div>
+            <h3>Backend Development:</h3>
+            <p><strong>e-STEPS LLC</strong> – Supported SQL database optimization and backend development.</p>
+
+            <h3>Supply Chain & Materials:</h3>
+            <p><strong>HOD Investment Company</strong> – Tracked and managed material acquisition for construction projects.</p>
+
+            <h3>Logistics & Inventory:</h3>
+            <p><strong>Advanced Hospice</strong> – Oversaw warehouse inventory and distribution of medical supplies.</p>
+          </div>
+        </section>
 
         <section id="screen-4">
           <h2>About Me</h2>
