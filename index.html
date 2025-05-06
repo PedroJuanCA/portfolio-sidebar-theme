@@ -26,11 +26,23 @@
       z-index: 1000;
       pointer-events: none;
     }
+
+    portfolio-sidebar-theme {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      portfolio-sidebar-theme {
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="loading-text" id="loadingScreen">LOADING PORTFOLIO.EXE...</div>
-  
+
   <portfolio-sidebar-theme></portfolio-sidebar-theme>
 
   <script>
